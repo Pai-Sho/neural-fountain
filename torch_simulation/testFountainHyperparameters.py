@@ -81,7 +81,7 @@ for depth in xrange(1,3):
 					N_most_accurate 			= N
 					D_in_most_accurate 			= D_in
 					D_out_most_accurate 		= D_out
-					learning_rate_most_accurate = learning rate
+					learning_rate_most_accurate = learning_rate
 				if(stdev < min_stddev):
 					accuracy_most_consistent	  = accuracy
 					min_stddev					  = stdev
@@ -91,7 +91,7 @@ for depth in xrange(1,3):
 					N_most_consistent 			  = N
 					D_in_most_consistent 		  = D_in
 					D_out_most_consistent 		  = D_out
-					learning_rate_most_consistent = learning rate
+					learning_rate_most_consistent = learning_rate
 			#end for-H_2
 		else:
 			#Fancy UI
