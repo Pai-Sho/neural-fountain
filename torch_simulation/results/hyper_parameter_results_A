@@ -1,3 +1,6 @@
+Each topology was trained for 100 sessions of 500 epochs
+
+
 Input Dimension:  		2
 Hidden Layer 1 Width:	2
 Output Dimension:  		1 

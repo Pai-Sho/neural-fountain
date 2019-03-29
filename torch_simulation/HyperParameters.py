@@ -15,7 +15,7 @@ N 				  = 10
 D_in 			  = 2
 D_out 			  = 1
 learning_rate 	  = 1e-5
-training_sessions = 100
+training_sessions = 50
 
 hidden_layer_min_width = 2
 hidden_layer_max_width = 4

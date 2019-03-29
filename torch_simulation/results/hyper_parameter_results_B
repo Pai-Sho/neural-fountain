@@ -1,0 +1,87 @@
+Each topology was trained for 50 sessions of 200 epochs
+
+Input Dimension: 	2
+Hidden Layer 1 Width:	2
+Hidden Layer 2 Width:	0
+Output Dimension: 	1
+Average accuracy:	0.6292000000000001
+Standard deviation:	0.180077534322
+
+Input Dimension: 	2
+Hidden Layer 1 Width:	3
+Hidden Layer 2 Width:	0
+Output Dimension: 	1
+Average accuracy:	0.6775000000000001
+Standard deviation:	0.166522812067
+
+Input Dimension: 	2
+Hidden Layer 1 Width:	4
+Hidden Layer 2 Width:	0
+Output Dimension: 	1
+Average accuracy:	0.7195999999999999
+Standard deviation:	0.159123363772
+
+Input Dimension: 	2
+Hidden Layer 1 Width:	2
+Hidden Layer 2 Width:	2
+Output Dimension: 	1
+Average accuracy:	0.7025000000000001
+Standard deviation:	0.163077075805
+
+Input Dimension: 	2
+Hidden Layer 1 Width:	2
+Hidden Layer 2 Width:	3
+Output Dimension: 	1
+Average accuracy:	0.7039000000000002
+Standard deviation:	0.15727361443
+Each network was trained for 50 training sessions of 200 epochs
+
+Input Dimension: 	2
+Hidden Layer 1 Width:	2
+Hidden Layer 2 Width:	4
+Output Dimension: 	1
+Average accuracy:	0.7339
+Standard deviation:	0.150062197989
+
+Input Dimension: 	2
+Hidden Layer 1 Width:	3
+Hidden Layer 2 Width:	2
+Output Dimension: 	1
+Average accuracy:	0.7296999999999998
+Standard deviation:	0.152527715782
+
+Input Dimension: 	2
+Hidden Layer 1 Width:	3
+Hidden Layer 2 Width:	3
+Output Dimension: 	1
+Average accuracy:	0.6694000000000001
+Standard deviation:	0.180078327629
+
+Input Dimension: 	2
+Hidden Layer 1 Width:	3
+Hidden Layer 2 Width:	4
+Output Dimension: 	1
+Average accuracy:	0.6742000000000001
+Standard deviation:	0.162054286697
+
+Input Dimension: 	2
+Hidden Layer 1 Width:	4
+Hidden Layer 2 Width:	2
+Output Dimension: 	1
+Average accuracy:	0.6896000000000001
+Standard deviation:	0.164595484353
+
+Input Dimension: 	2
+Hidden Layer 1 Width:	4
+Hidden Layer 2 Width:	3
+Output Dimension: 	1
+Average accuracy:	0.6966
+Standard deviation:	0.155696067086
+
+Input Dimension: 	2
+Hidden Layer 1 Width:	4
+Hidden Layer 2 Width:	4
+Output Dimension: 	1
+Average accuracy:	0.722
+Standard deviation:	0.160401282503
+
