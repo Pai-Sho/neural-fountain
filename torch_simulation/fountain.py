@@ -69,9 +69,9 @@ def TestModel(N, depth, D_in, H_1, H_2, D_out, learning_rate):
     # Construct our model by instantiating the class defined above
     if(depth == 1):
         model = torch.nn.Sequential(
-            constrainedLinear(D_in, H),
+            constrainedLinear(D_in, H_1),
             torch.nn.ReLU(),
-            constrainedLinear(H, D_out)
+            constrainedLinear(H_1, D_out)
         )
     elif(depth == 2):
         model = torch.nn.Sequential(
