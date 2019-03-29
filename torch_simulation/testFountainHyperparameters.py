@@ -62,7 +62,6 @@ for depth in xrange(1,3):
 				for i in xrange (0, training_sessions):
 					print "Iteration: ", i
 					print ""
-					print "Iteration"
 					#Train the model and record the accuracy
 					accuracy = fountain.TestModel(N, depth, D_in, H_1, H_2, D_out, learning_rate)
 					accuracy_list.append(accuracy)
