@@ -33,7 +33,7 @@ H_2_most_accurate			= H_2
 N_most_accurate 			= N
 D_in_most_accurate 			= D_in
 D_out_most_accurate 		= D_out
-learning_rate_most_accurate = learning rate
+learning_rate_most_accurate = learning_rate
 
 depth_most_consistent		  = depth
 H_1_most_consistent			  = H_1
@@ -41,7 +41,7 @@ H_2_most_consistent			  = H_2
 N_most_consistent 			  = N
 D_in_most_consistent 		  = D_in
 D_out_most_consistent 		  = D_out
-learning_rate_most_consistent = learning rate
+learning_rate_most_consistent = learning_rate
 
 
 #Iterate between 1 and 2 hidden layers
