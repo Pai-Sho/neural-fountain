@@ -8,6 +8,7 @@
 
 #imports
 import fountain
+import statistics
 
 #Constants 				!!!NOTE!!! idk what learning rates to iterate throught. left as constant
 N 				  = 10
@@ -19,7 +20,7 @@ training_sessions = 100
 hidden_layer_min_width = 2
 hidden_layer_max_width = 4
 
-num_models = (hidden_layer_max_width - hidden_layer_min_width) + (hidden_layer_max_width - hidden_layer_min_width)*(hidden_layer_max_width - hidden_layer_min_width)
+num_models = (hidden_layer_max_width - hidden_layer_min_width + 1) + (hidden_layer_max_width - hidden_layer_min_width + 1)*(hidden_layer_max_width - hidden_layer_min_width + 1)
 
 #Temporary initializations
 depth 			= 0
@@ -31,22 +32,6 @@ stdev 			 = 0
 max_accuracy 	 = 0
 min_stddev		 = float('inf') 
 accuracy_list 	 = []
-
-depth_most_accurate			= depth
-H_1_most_accurate			= H_1
-H_2_most_accurate			= H_2
-N_most_accurate 			= N
-D_in_most_accurate 			= D_in
-D_out_most_accurate 		= D_out
-learning_rate_most_accurate = learning_rate
-
-depth_most_consistent		  = depth
-H_1_most_consistent			  = H_1
-H_2_most_consistent			  = H_2
-N_most_consistent 			  = N
-D_in_most_consistent 		  = D_in
-D_out_most_consistent 		  = D_out
-learning_rate_most_consistent = learning_rate
 
 index = 0
 
@@ -78,33 +63,12 @@ for depth in xrange(1,3):
 
 				#end for-i
 
-				average_accuracy = accuracy_list.mean()
-				stdev 			 = accuracy_list.stdev()
+				average_accuracy = sum(accuracy_list)/len(accuracy_list)
+				stdev 			 = statistics.stdev(accuracy_list)
 				print "Average accuracy:	", average_accuracy
 				print "Standard deviation:	", stdev, "\n\n"
 				#Clear the accuracy list for the next hyper parameter set
 				accuracy_list = []
-
-				if(average_accuracy > max_accuracy):
-					max_accuracy 				= average_accuracy
-					stdev_most_accurate 		= stdev
-					depth_most_accurate			= depth
-					H_1_most_accurate			= H_1
-					H_2_most_accurate			= H_2
-					N_most_accurate 			= N
-					D_in_most_accurate 			= D_in
-					D_out_most_accurate 		= D_out
-					learning_rate_most_accurate = learning_rate
-				if(stdev < min_stddev):
-					accuracy_most_consistent	  = accuracy
-					min_stddev					  = stdev
-					depth_most_consistent		  = depth
-					H_1_most_consistent			  = H_1
-					H_2_most_consistent			  = H_2
-					N_most_consistent 			  = N
-					D_in_most_consistent 		  = D_in
-					D_out_most_consistent 		  = D_out
-					learning_rate_most_consistent = learning_rate
 			#end for-H_2
 		else:
 			index = index + 1
@@ -122,57 +86,12 @@ for depth in xrange(1,3):
 				accuracy_list.append(accuracy)
 			#end for-i
 
-			average_accuracy = accuracy_list.mean()
-			stdev 			 = accuracy_list.stdev()
+			average_accuracy = sum(accuracy_list)/len(accuracy_list)
+			stdev 			 = statistics.stdev(accuracy_list)
 			print "Average Accuracy:	", average_accuracy
 			print "Standard Deviation:	", stdev, "\n\n"
 			#Clear the accuracy list for the next hyper parameter set
 			accuracy_list = []
-
-			#Record the hyper parameters for best accuracy and lowest standard deviation
-			if(average_accuracy > max_accuracy):
-				max_accuracy 				= average_accuracy
-				stdev_most_accurate 		= stdev
-				depth_most_accurate			= depth
-				H_1_most_accurate			= H_1
-				H_2_most_accurate			= H_2
-				N_most_accurate 			= N
-				D_in_most_accurate 			= D_in
-				D_out_most_accurate 		= D_out
-				learning_rate_most_accurate = learning_rate
-			if(stdev < min_stddev):
-				accuracy_most_consistent	  = accuracy
-				min_stddev					  = stdev
-				depth_most_consistent		  = depth
-				H_1_most_consistent			  = H_1
-				H_2_most_consistent			  = H_2
-				N_most_consistent 			  = N
-				D_in_most_consistent 		  = D_in
-				D_out_most_consistent 		  = D_out
-				learning_rate_most_consistent = learning_rate
 		#end if-else
 	#end for-H_1
 #end for-depth
-
-# Print the two most optimal networks, their accuracy, stdev, and hyper parameters
-print "\n\nMost Accurate Network:"
-print "\nAccuracy:	", max_accuracy
-print "	Standard Deviation:	", stdev_most_accurate
-print "	Input Dimension:	", D_in_most_accurate
-print "	Hidden Layer Depth:	", depth_most_accurate
-print "	Hidden Layer 1 Width:	", H_1_most_accurate
-print "	Hidden Layer 2 Width:	", H_1_most_accurate
-print "	Output Dimension:	", D_out_most_accurate
-print "	Learning Rate:	", learning_rate_most_accurate
-
-print "\n\nMost Consistent Network:"
-print "\nAccuracy:	", accuracy_most_consistent
-print "	Standard Deviation:	", min_stddev
-print "	Input Dimension:	", D_in_most_consistent
-print "	Hidden Layer Depth:	", depth_most_consistent
-print "	Hidden Layer 1 Width:	", H_1_most_consistent
-print "	Hidden Layer 2 Width:	", H_1_most_consistent
-print "	Output Dimension:	", D_out_most_consistent
-print "	Learning Rate:	", learning_rate_most_consistent
-
-print ""

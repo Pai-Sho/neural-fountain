@@ -1,0 +1,87 @@
+Input Dimension:  		2
+Hidden Layer 1 Width:	2
+Output Dimension:  		1 
+Average Accuracy:	0.66455
+Standard Deviation:	0.167084468749
+
+Input Dimension:  		2
+Hidden Layer 1 Width:	3
+Output Dimension:  		1
+Average Accuracy:	0.7288999999999998
+Standard Deviation:	0.18054991755 
+
+Input Dimension:  		2
+Hidden Layer 1 Width:	4
+Output Dimension:  		1	 
+Average Accuracy:	0.7225500000000004
+Standard Deviation:	0.182473873874 
+
+Input Dimension:  		2
+Hidden Layer 1 Width:	2
+Hidden Layer 2 Width:	2
+Output Dimension:  		1	 
+Average accuracy:	0.7245499999999997
+Standard deviation:	0.160090086697 
+
+Input Dimension:  		2
+Hidden Layer 1 Width:	2
+Hidden Layer 2 Width:	3
+Output Dimension:  		1	
+Average accuracy:	0.7507499999999997
+Standard deviation:	0.16386797932 
+
+Input Dimension:  		2
+Depth:					2
+Hidden Layer 1 Width:	2
+Hidden Layer 2 Width:	4
+Output Dimension:  		1 
+Average accuracy:	0.7570500000000001
+Standard deviation:	0.166465173656
+
+Input Dimension:  		2
+Hidden Layer 1 Width:	3
+Hidden Layer 2 Width:	2
+Output Dimension:  		1 
+Average accuracy:	0.7535
+Standard deviation:	0.171591628201
+
+Input Dimension:  		2
+Hidden Layer 1 Width:	3
+Hidden Layer 2 Width:	3
+Output Dimension:  		1 
+Average accuracy:	0.7349000000000001
+Standard deviation:	0.162398344272 
+
+Input Dimension:  		2
+Hidden Layer 1 Width:	3
+Hidden Layer 2 Width:	4
+Output Dimension:  		1
+Average accuracy:	0.75225
+Standard deviation:	0.161749236958
+
+Input Dimension:  		2
+Hidden Layer 1 Width:	4
+Hidden Layer 2 Width:	2
+Output Dimension:  		1
+Average accuracy:	0.7255000000000003
+Standard deviation:	0.171320627993
+
+#########################################
+#										#
+# 		Most accurate AND consistent    #
+#										#
+#########################################
+Input Dimension:  		2
+Hidden Layer 1 Width:	4
+Hidden Layer 2 Width:	3
+Output Dimension:  		1
+Average accuracy:	0.78265
+Standard deviation:	0.150992432415
+
+Input Dimension:  		2
+Hidden Layer 1 Width:	4
+Hidden Layer 2 Width:	4
+Output Dimension:  		1
+Average accuracy:	0.7374500000000002
+Standard deviation:	0.163817302462 
+
