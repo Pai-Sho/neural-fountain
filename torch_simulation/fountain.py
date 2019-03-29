@@ -135,11 +135,11 @@ def TestModel(N, depth, D_in, H_1, H_2, D_out, learning_rate):
         y_predicted = model(X_train)
         train_losses.append(criterion(y_predicted, Y_train))
 
-        print("Epoch: %d\tTrain Loss = %f\tTest Loss = %f"%(i, train_losses[i].item(), test_losses[i].item()))
+        #print("Epoch: %d\tTrain Loss = %f\tTest Loss = %f"%(i, train_losses[i].item(), test_losses[i].item()))
 
     # Evaluate test set and print accuracy
     y_predicted = model(X_test)
-    test_accuracy = (torch.sum(torch.eq((y_predicted > 0.5).double(),Y_test.double())).data.numpy())/200
-
+    test_accuracy = (torch.sum(torch.eq((y_predicted > 0.5).double(),Y_test.double())).data.numpy())/200.
+    print "Test accuracy:   ", test_accuracy, "\n"
     #Return the test accuracy to the parent call
     return test_accuracy
