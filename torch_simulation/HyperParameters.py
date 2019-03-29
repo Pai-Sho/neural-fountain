@@ -10,7 +10,7 @@
 import fountain
 import statistics
 
-#Constants 				!!!NOTE!!! idk what learning rates to iterate throught. left as constant
+#Constants 				!!!NOTE!!! idk what learning rates to iterate through. left as constant
 N 				  = 10
 D_in 			  = 2
 D_out 			  = 1
@@ -21,6 +21,9 @@ hidden_layer_min_width = 2
 hidden_layer_max_width = 4
 
 num_models = (hidden_layer_max_width - hidden_layer_min_width + 1) + (hidden_layer_max_width - hidden_layer_min_width + 1)*(hidden_layer_max_width - hidden_layer_min_width + 1)
+
+file = "results/hyper_parameter_results"
+file_to_write = open(file, 'w')
 
 #Temporary initializations
 depth 			= 0
@@ -65,8 +68,16 @@ for depth in xrange(1,3):
 
 				average_accuracy = sum(accuracy_list)/len(accuracy_list)
 				stdev 			 = statistics.stdev(accuracy_list)
-				print "Average accuracy:	", average_accuracy
-				print "Standard deviation:	", stdev, "\n\n"
+				print "Average Accuracy:	", average_accuracy
+				print "Standard Deviation:	", stdev, "\n\n"
+
+				#Write to File
+				file_to_write.write( "Input Dimension: 	" + str(D_in) + "\n")
+				file_to_write.write( "Hidden Layer 1 Width:	" + str(H_1) + "\n")
+				file_to_write.write( "Hidden Layer 2 Width:	" + str(H_2) + "\n")
+				file_to_write.write( "Output Dimension: 	" + str(D_out) + "\n")
+				file_to_write.write( "Average accuracy:	" + str(average_accuracy) + "\n")
+				file_to_write.write( "Standard deviation:	" + str(stdev) + "\n\n")
 				#Clear the accuracy list for the next hyper parameter set
 				accuracy_list = []
 			#end for-H_2
@@ -90,6 +101,14 @@ for depth in xrange(1,3):
 			stdev 			 = statistics.stdev(accuracy_list)
 			print "Average Accuracy:	", average_accuracy
 			print "Standard Deviation:	", stdev, "\n\n"
+
+			#Write to File
+			file_to_write.write( "Input Dimension: 	" + str(D_in) + "\n")
+			file_to_write.write( "Hidden Layer 1 Width:	" + str(H_1) + "\n")
+			file_to_write.write( "Hidden Layer 2 Width:	" + str(H_2) + "\n")
+			file_to_write.write( "Output Dimension: 	" + str(D_out) + "\n")
+			file_to_write.write( "Average accuracy:	" + str(average_accuracy) + "\n")
+			file_to_write.write( "Standard deviation:	" + str(stdev) + "\n\n")
 			#Clear the accuracy list for the next hyper parameter set
 			accuracy_list = []
 		#end if-else

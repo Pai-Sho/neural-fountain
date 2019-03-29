@@ -113,7 +113,7 @@ def TestModel(N, depth, D_in, H_1, H_2, D_out, learning_rate):
     test_losses = []
 
     # Run 500 epochs (probably way too many)
-    for i in range(500):
+    for i in range(200):
 
         # Run each batch
         for j in range(80):
