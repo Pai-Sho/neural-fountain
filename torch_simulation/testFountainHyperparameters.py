@@ -63,6 +63,7 @@ for depth in xrange(1,3):
 					#Train the model and record the accuracy
 					accuracy = fountain.TestModel(N, depth, D_in, H_1, H_2, D_out, learning_rate)
 					accuracy_list.append(accuracy)
+					print ""
 				#end for-i
 
 				average_accuracy = accuracy_list.mean()
@@ -103,6 +104,7 @@ for depth in xrange(1,3):
 				#Train the model and record the accuracy
 				accuracy = fountain.TestModel(N, depth, D_in, H_1, H_2, D_out, learning_rate)
 				accuracy_list.append(accuracy)
+				print ""
 			#end for-i
 
 			average_accuracy = accuracy_list.mean()
