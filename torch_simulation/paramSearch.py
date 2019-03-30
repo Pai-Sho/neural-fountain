@@ -16,7 +16,7 @@ training_sessions = 2
 
 # Define hyperparameters to test
 learning_rates = [1e-5,5e-5,1e-4,5e-4,1e-3,5e-3]
-batch_sizes = [128]
+batch_sizes = [8,16,32,64]
 
 # Initialize statistics variables
 average_accuracy = 0
