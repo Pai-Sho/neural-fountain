@@ -60,7 +60,7 @@ class WeightClipper(object):
 " @param H_2
 " @param D_out
 " @param learning_rate
-" 
+"
 " @returns test_accuracy
 "
 """
@@ -109,14 +109,19 @@ def TestModel(N, depth, D_in, H_1, H_2, D_out, learning_rate):
     criterion = torch.nn.MSELoss()
     optimizer = torch.optim.SGD(model.parameters(), lr=learning_rate)
 
+
+    # Initialize loss arrays and batches
     train_losses = []
     test_losses = []
+
+    num_batches = len(X_train)//N
 
     # Run 500 epochs (probably way too many)
     for i in range(200):
 
         # Run each batch
-        for j in range(80):
+
+        for j in range(num_batches):
 
             # Compute forward pass
             y_pred = model(X_train[j*N:(j+1)*N])
@@ -129,17 +134,27 @@ def TestModel(N, depth, D_in, H_1, H_2, D_out, learning_rate):
             loss.backward()
             optimizer.step()
 
+        # Take care of last batch if len(X_train)
+        # is not evenly divisible by batch size
+        if len(X_train) % N:
+
+            y_pred = model(X_train[N*num_batches:])
+            loss = criterion(y_pred, Y_train[N*num_batches:])
+            optimizer.zero_grad()
+            loss.backward()
+            optimizer.step()
+
         # Save and print train and test losses for each epoch
         y_predicted = model(X_test)
         test_losses.append(criterion(y_predicted, Y_test))
         y_predicted = model(X_train)
         train_losses.append(criterion(y_predicted, Y_train))
 
-        #print("Epoch: %d\tTrain Loss = %f\tTest Loss = %f"%(i, train_losses[i].item(), test_losses[i].item()))
+        # print("Epoch: %d\tTrain Loss = %f\tTest Loss = %f"%(i, train_losses[i].item(), test_losses[i].item()))
 
     # Evaluate test set and print accuracy
     y_predicted = model(X_test)
     test_accuracy = (torch.sum(torch.eq((y_predicted > 0.5).double(),Y_test.double())).data.numpy())/200.
-    print "Test accuracy:   ", test_accuracy, "\n"
+    print("Test accuracy:   ", test_accuracy, "\n")
     #Return the test accuracy to the parent call
     return test_accuracy
