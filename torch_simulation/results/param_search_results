@@ -1,0 +1,96 @@
+For batch size = 8, lr = 0.000010:
+Average Accuracy:		0.790500
+Standard Deviation:		0.149638
+
+For batch size = 16, lr = 0.000010:
+Average Accuracy:		0.629500
+Standard Deviation:		0.200948
+
+For batch size = 32, lr = 0.000010:
+Average Accuracy:		0.632500
+Standard Deviation:		0.173530
+
+For batch size = 64, lr = 0.000010:
+Average Accuracy:		0.583500
+Standard Deviation:		0.120417
+
+For batch size = 8, lr = 0.000050:
+Average Accuracy:		0.759000
+Standard Deviation:		0.161173
+
+For batch size = 16, lr = 0.000050:
+Average Accuracy:		0.836000
+Standard Deviation:		0.123599
+
+For batch size = 32, lr = 0.000050:
+Average Accuracy:		0.798500
+Standard Deviation:		0.133626
+
+For batch size = 64, lr = 0.000050:
+Average Accuracy:		0.693000
+Standard Deviation:		0.153681
+
+For batch size = 8, lr = 0.000100:
+Average Accuracy:		0.781500
+Standard Deviation:		0.162738
+
+For batch size = 16, lr = 0.000100:
+Average Accuracy:		0.849000
+Standard Deviation:		0.119648
+
+For batch size = 32, lr = 0.000100:
+Average Accuracy:		0.677000
+Standard Deviation:		0.188991
+
+For batch size = 64, lr = 0.000100:
+Average Accuracy:		0.725000
+Standard Deviation:		0.197470
+
+For batch size = 8, lr = 0.000500:
+Average Accuracy:		0.895500
+Standard Deviation:		0.021915
+
+For batch size = 16, lr = 0.000500:
+Average Accuracy:		0.767500
+Standard Deviation:		0.191126
+
+For batch size = 32, lr = 0.000500:
+Average Accuracy:		0.844500
+Standard Deviation:		0.121254
+
+For batch size = 64, lr = 0.000500:
+Average Accuracy:		0.870500
+Standard Deviation:		0.051932
+
+For batch size = 8, lr = 0.001000:
+Average Accuracy:		0.789000
+Standard Deviation:		0.199023
+
+For batch size = 16, lr = 0.001000:
+Average Accuracy:		0.746500
+Standard Deviation:		0.182270
+
+For batch size = 32, lr = 0.001000:
+Average Accuracy:		0.729000
+Standard Deviation:		0.196946
+
+For batch size = 64, lr = 0.001000:
+Average Accuracy:		0.817500
+Standard Deviation:		0.159116
+
+For batch size = 8, lr = 0.005000:
+Average Accuracy:		0.725000
+Standard Deviation:		0.186949
+
+For batch size = 16, lr = 0.005000:
+Average Accuracy:		0.671000
+Standard Deviation:		0.201919
+
+For batch size = 32, lr = 0.005000:
+Average Accuracy:		0.899000
+Standard Deviation:		0.022460
+
+For batch size = 64, lr = 0.005000:
+Average Accuracy:		0.616500
+Standard Deviation:		0.188651
+

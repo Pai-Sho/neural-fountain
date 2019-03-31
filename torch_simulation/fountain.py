@@ -155,6 +155,6 @@ def TestModel(N, depth, D_in, H_1, H_2, D_out, learning_rate):
     # Evaluate test set and print accuracy
     y_predicted = model(X_test)
     test_accuracy = (torch.sum(torch.eq((y_predicted > 0.5).double(),Y_test.double())).data.numpy())/200.
-    print("Test accuracy:   ", test_accuracy, "\n")
+    print " fountain:accuracy:   " + str(test_accuracy)
     #Return the test accuracy to the parent call
     return test_accuracy
