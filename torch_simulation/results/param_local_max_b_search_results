@@ -1,0 +1,102 @@
+All trainings done for 10 sessions of 100 training steps
+
+For batch size = 30, lr = 0.003000:
+Average Accuracy:		0.778500
+Standard Deviation:		0.202691
+
+For batch size = 31, lr = 0.003000:
+Average Accuracy:		0.785500
+Standard Deviation:		0.173341
+
+For batch size = 32, lr = 0.003000:
+Average Accuracy:		0.780500
+Standard Deviation:		0.186569
+
+For batch size = 33, lr = 0.003000:
+Average Accuracy:		0.809000
+Standard Deviation:		0.167030
+
+For batch size = 34, lr = 0.003000:
+Average Accuracy:		0.701000
+Standard Deviation:		0.182860
+
+For batch size = 30, lr = 0.004000:
+Average Accuracy:		0.781500
+Standard Deviation:		0.187113
+
+For batch size = 31, lr = 0.004000:
+Average Accuracy:		0.804500
+Standard Deviation:		0.169090
+
+For batch size = 32, lr = 0.004000:
+Average Accuracy:		0.783500
+Standard Deviation:		0.194094
+
+For batch size = 33, lr = 0.004000:
+Average Accuracy:		0.801000
+Standard Deviation:		0.176789
+
+For batch size = 34, lr = 0.004000:
+Average Accuracy:		0.823000
+Standard Deviation:		0.157854
+
+For batch size = 30, lr = 0.005000:
+Average Accuracy:		0.728000
+Standard Deviation:		0.195650
+
+For batch size = 31, lr = 0.005000:
+Average Accuracy:		0.719000
+Standard Deviation:		0.205343
+
+For batch size = 32, lr = 0.005000:
+Average Accuracy:		0.821500
+Standard Deviation:		0.171821
+
+For batch size = 33, lr = 0.005000:
+Average Accuracy:		0.766500
+Standard Deviation:		0.173846
+
+For batch size = 34, lr = 0.005000:
+Average Accuracy:		0.711000
+Standard Deviation:		0.198561
+
+For batch size = 30, lr = 0.006000:
+Average Accuracy:		0.718500
+Standard Deviation:		0.190074
+
+For batch size = 31, lr = 0.006000:
+Average Accuracy:		0.825000
+Standard Deviation:		0.171124
+
+For batch size = 32, lr = 0.006000:
+Average Accuracy:		0.738500
+Standard Deviation:		0.216115
+
+For batch size = 33, lr = 0.006000:
+Average Accuracy:		0.714500
+Standard Deviation:		0.206592
+
+For batch size = 34, lr = 0.006000:
+Average Accuracy:		0.776500
+Standard Deviation:		0.177201
+
+For batch size = 30, lr = 0.007000:
+Average Accuracy:		0.747500
+Standard Deviation:		0.179633
+
+For batch size = 31, lr = 0.007000:
+Average Accuracy:		0.856500
+Standard Deviation:		0.157269
+
+For batch size = 32, lr = 0.007000:
+Average Accuracy:		0.796000
+Standard Deviation:		0.181839
+
+For batch size = 33, lr = 0.007000:
+Average Accuracy:		0.709000
+Standard Deviation:		0.184944
+
+For batch size = 34, lr = 0.007000:
+Average Accuracy:		0.781000
+Standard Deviation:		0.197594
+

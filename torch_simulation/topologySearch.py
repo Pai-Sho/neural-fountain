@@ -102,7 +102,7 @@ for depth in xrange(1,3):
 
 			average_accuracy = sum(accuracy_list)/len(accuracy_list)
 			stdev 			 = statistics.stdev(accuracy_list)
-			print "\nAverage Accuracy:	", average_accuracy
+			print "Average Accuracy:	", average_accuracy
 			print "Standard Deviation:	", stdev, "\n\n"
 
 			#Write to File
